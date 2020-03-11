@@ -1,0 +1,368 @@
+.App {
+  text-align: center;
+}
+/* Navbar */
+a{
+  text-decoration: none;
+}
+.Nav{
+  z-index:99999;
+	position:fixed;
+	top:0;
+	left:0;
+	padding:0 50px;
+	width:100%;
+  box-sizing:border-box;
+  box-shadow: 0 5px 20px rgb(180, 180, 180);
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+.navtitle{
+  color: #FFFFFF;
+  font-size: 26px;
+  float: left;
+  padding-left: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  height: 75px;
+  line-height: 75px;
+}
+.navroute{
+  float:right;
+	height:75px;
+  line-height:75px;
+	transition:.5;
+}
+.navroute ul{
+  margin:0 40px 0 0;
+	padding:0;
+	display:flex;
+}
+.navroute ul li {
+  list-style:none;
+}
+.navroute a{
+  position:relative;
+	padding:0 25px;
+	color:#FFFFFF;
+	text-decoration:none;
+	display:block;
+	text-transform:uppercase;
+	box-sizing:border-box;
+	transition:.5s;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Alert */
+.alert{
+  text-align: center;
+  padding: 20px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.alert-danger{
+  background-color: rgba(187, 3, 3, 0.808);
+}
+.alert-success{
+  background-color: rgba(3, 187, 58, 0.808);
+}
+
+/* Login / Register */
+.register{
+  width: 400px; 
+  background-color: #FFFFFF;
+  margin-top: 30px;
+  box-shadow: 0 0 20px #ccc;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.login{
+  width: 400px; 
+  background-color: #FFFFFF;
+  margin-top: 60px;
+  box-shadow: 0 0 20px #ccc;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.login-heading{
+  padding-top: 40px;
+  float: left;
+  padding-left: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.login-form{
+  padding: 10px 30px;
+}
+::placeholder {
+  color: rgb(175, 174, 174);
+  font-size: 13.5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  padding-left: 15px;
+}
+
+input[type = 'email']{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  padding: 0;
+  border: 2px solid rgb(233, 233, 233);
+  border-radius: 5px;
+  color: rgb(175, 174, 174);
+  font-size: 13.5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+input[type = 'password']{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  padding: 0;
+  border: 2px solid rgb(233, 233, 233);
+  border-radius: 5px;
+  color: rgb(175, 174, 174);
+  font-size: 13.5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+input[type = 'text']{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  padding: 0;
+  border: 2px solid rgb(233, 233, 233);
+  border-radius: 5px;
+  color: rgb(175, 174, 174);
+  font-size: 13.5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+input[type = 'num']{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  padding: 0;
+  border: 2px solid rgb(233, 233, 233);
+  border-radius: 5px;
+  color: rgb(175, 174, 174);
+  font-size: 13.5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+input[type = 'submit'] {
+  background-color: #F73757;
+  border: none;
+  margin: 40px 0 60px 0;
+  padding: 10px 35px;
+  box-shadow: 0 15px 20px rgb(255, 139, 159);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Home Page */
+
+/* Task Form */
+.main-task-div{
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-div{
+  width: 45%;
+}
+.task-div{
+  width: 55%;
+}
+.task-form{
+  width: 400px;
+  margin-top: 70px;
+  box-shadow: 0 0px 15px rgb(228, 228, 228);
+  border-radius: 5px;
+}
+.task-form2{
+  padding: 20px;
+}
+.task-form h3{
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+.radio-div{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.radio {
+  width: 40%;
+  padding: 0 5%;
+}
+.task-form h5{
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+.clear-button{
+  background-color: #ffffff;
+  border: 1px solid #F73757;
+  margin: 40px 0 0px 0;
+  padding: 10px 35px;
+  color: #F73757;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Tasks */
+.task-div2{
+  margin-top: 70px;
+}
+.task-card{
+  width: 550px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgb(231, 231, 231);
+  border-radius: 6px;
+}
+.card-content {
+  padding: 20px;
+}
+.task-title{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #000;
+  text-align: left;
+  padding-bottom: 10px;
+  margin: 0px;
+  padding-left: 0px!important;
+}
+.task-body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(31, 31, 31);
+  text-align: left;
+  padding-bottom: 15px;
+  margin: 0px;
+}
+.task-status{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #F73757;
+  text-align: left;
+  margin: 0px;
+}
+.task-button-div{
+  display: flex;
+  margin: 20px 0;
+}
+.delete{
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #6a11cb;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+.update{
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  color: #000;
+  border: 1px solid #6a11cb;
+  cursor: pointer;
+}
+
+/* Admin */
+.admin-div{
+  padding: 30px 0 50px 100px;
+}
+.admin-div h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  padding-left: 10px;
+}
+.user-card{
+  width: 500px;
+  box-shadow: 0 0 20px #eee;
+  margin-top: 30px;
+}
+.admin-card-content{
+  padding: 20px;
+}
+.user-name {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 25px;
+  color: #000;
+  margin: 0;
+}
+.user-email {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(31, 31, 31);
+  margin: 0;
+  padding-top: 5px;
+}
+.user-phone {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 13px;
+  color: rgb(71, 71, 71);
+  margin: 0;
+  padding-top: 7px;
+}
+.user-button{
+  color: #F73757;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.task-card2{
+  width: 700px;
+  margin: 30px;
+  box-shadow: 0 0 10px rgb(231, 231, 231);
+  border-radius: 6px;
+}
+.card-content2 {
+  padding: 30px 45px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
